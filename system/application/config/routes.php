@@ -38,9 +38,9 @@
 |
 */
 
-$route['default_controller'] = 'anime';
-$route['anime/(:any)/list'] = "anime/browse/$1";
-$route['anime/(:any)/episode/(:num)'] = "anime/show/$1/$2";
-$route['anime/db/migrate'] = "migrate/create_db";
+$route['default_controller'] = 'anime/view';
+$route['(:any)'] = 'anime/view/$1';
+
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
